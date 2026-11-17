@@ -11,8 +11,8 @@ FastAPI service with an animated web UI serves predictions and logs them to Post
 - **predictor-net**: custom Podman network so `api` reaches `db` by name
 
 ## Images
-- https://hub.docker.com/r/yourusername/student-api
-- https://hub.docker.com/r/yourusername/student-trainer
+- https://hub.docker.com/r/lakshyapanwar05/student-api
+- https://hub.docker.com/r/lakshyapanwar05/student-trainer
 
 ## Prerequisites
 Podman (rootless), Python 3 (only to generate the dataset).
@@ -77,9 +77,9 @@ If the database is down, the API still predicts and returns `"logged": false`.
 ### 8. Push and pull
 ```bash
 podman login docker.io
-podman tag student-api:1.1 docker.io/yourusername/student-api:1.1
-podman push docker.io/yourusername/student-api:1.1
-podman pull docker.io/yourusername/student-api:1.1
+podman tag student-api:1.1 docker.io/lakshyapanwar05/student-api:1.1
+podman push docker.io/lakshyapanwar05/student-api:1.1
+podman pull docker.io/lakshyapanwar05/student-api:1.1
 ```
 
 ## Results
